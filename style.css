@@ -5,6 +5,9 @@
   box-sizing: border-box;
   font-family: "Spartan", sans-serif;
 }
+a{
+  all: unset;
+}
 
 html {
   scroll-behavior: smooth;
@@ -82,12 +85,15 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 20px 80px;
-  background: #d7d4f3;
+  /* background: #d7d4f3; */
+  background:transparent;
+  backdrop-filter: blur(10px);
   box-shadow: 0 15px 15px rgba(0, 0, 0, 0.06);
   z-index: 999;
   position: sticky;
   top: 0;
   left: 0;
+
 }
 
 #navbar {
@@ -231,6 +237,11 @@ body {
 #feature .fe-box img {
   width: 100%;
   margin-bottom: 10px;
+}
+#feature .fe-box img:hover{
+  transform: scale(1.1);
+  transition:  0.2s ease-in-out;
+  cursor: pointer;
 }
 
 #feature .fe-box h6 {
